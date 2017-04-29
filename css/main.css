@@ -67,6 +67,8 @@ h1 {
 .bg_black:hover {
     opacity: 0.5;
     cursor:pointer;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -74,6 +76,7 @@ h1 {
     position: relative;
     width: auto;
     height: auto;
+    z-index:1;
 }
 
 .more {
