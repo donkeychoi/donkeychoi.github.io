@@ -73,12 +73,14 @@
       <div class="container text-position">  
           <h1>Hello, Choi World!</h1>
           <p>My portfolio Bootstrap - sall shirt </p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+          
+          <p><a class="btn btn-primary btn-lg" href="#form_section" role="button">Learn more</a></p>
+          
       </div>      
     </div>
 </section>     
 
- <section id="">    
+ <section id="con01">    
     <div class="container">
         <h1>Fishs</h1>
         <div class="row centerimg">
@@ -107,7 +109,7 @@
     </div>
 </section> 
       
-<section id="">
+<section id="con02">
    <div class="container">
         <h1>Shirt</h1>
         <div class="row centerimg">
@@ -142,7 +144,7 @@
     
 </section>      
       
-<section id="">
+<section id="form_section">
     <div class="container contact_wrap">
         
         <div><h3>Contact</h3></div>
@@ -169,6 +171,16 @@
         
 </section>      
       
+<section>  
+      <h2>What Can JavaScript Do?</h2>
+
+      <p id="demo">JavaScript can hide HTML elements.</p>
+
+      <button type="button" onclick="document.getElementById('demo').innerHTML='Hello'">Click Me!</button>
+    
+      <button type="button" onclick="document.getElementById('demo').innerHTML='JavaScript can hide HTML elements.'">Revert!</button>
+</section> 
+      
       
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -179,6 +191,19 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   
+    <!--smooth scroll
+    <script>
+        $(document).ready(function())
+    </script>
+    -->
+      <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+      <script>
+      window.sr = ScrollReveal();
+      sr.reveal('#con01');
+      sr.reveal('#con02');
+      sr.reveal('#form_section');
+     </script>      
       
   </body>
 </html>
